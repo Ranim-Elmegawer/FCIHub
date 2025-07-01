@@ -13,6 +13,12 @@ export class FciEventEntity {
 
     @Column()
     date: Date;
+
+    @Column({ nullable: true })
+    type: string;
+
+    @Column({ nullable: true })
+    imageUrl: string;
     
     @CreateDateColumn()
     createdAt: Date;

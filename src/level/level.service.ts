@@ -33,6 +33,7 @@ export class LevelService {
 
     async findById(id: number) {
         const level = await this.levelRepository.findOne({ where: { id }, relations: ['major'] });
+        console.error(level);
         if (!level) throw new MajorNotFoundException(id);
         return level;
     }

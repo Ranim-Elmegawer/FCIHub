@@ -18,6 +18,7 @@ import { LectureTimeModule } from './lecture-time/lecture-time.module';
 import { SectionTimeModule } from './section-time/section-time.module';
 import { MailService } from './mail/mail.service';
 import { MailModule } from './mail/mail.module';
+import { DropboxModule } from './dropbox/dropbox.module';
 
 @Module({
   imports: [
@@ -54,7 +55,8 @@ import { MailModule } from './mail/mail.module';
     FciEventModule,
     LectureTimeModule,
     SectionTimeModule,
-    MailModule],
+    MailModule,
+    DropboxModule],
   controllers: [AppController, UserController],
   providers: [AppService, DropboxService, MailService],
 })

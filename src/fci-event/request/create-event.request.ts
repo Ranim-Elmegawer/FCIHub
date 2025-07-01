@@ -9,4 +9,9 @@ export class CreateEventRequest {
 
     @IsNotNullOrUndefined()
     date: Date;
+
+    @IsNotNullOrUndefined()
+    type: string;
+
+    imageUrl?: string; 
 }
